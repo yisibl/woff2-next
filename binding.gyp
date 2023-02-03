@@ -12,7 +12,6 @@
         "./woff2/src/woff2_common.cc",
         "./woff2/src/woff2_dec.cc",
         "./woff2/src/woff2_enc.cc",
-        "./woff2/src/woff2_info.cc",
         "./woff2/src/woff2_out.cc",
 
         "./woff2/brotli/c/common/dictionary.c",
@@ -91,7 +90,6 @@
         "./woff2/src/woff2_common.cc",
         "./woff2/src/woff2_dec.cc",
         "./woff2/src/woff2_enc.cc",
-        "./woff2/src/woff2_info.cc",
         "./woff2/src/woff2_out.cc",
 
         "./woff2/brotli/c/common/dictionary.c",
