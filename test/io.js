@@ -15,7 +15,7 @@ const magic = {
 };
 
 test('Decode WOFF2 data.', (t) => {
-  temp.mkdir('node-woff2', (err, dirPath) => {
+  temp.mkdir('woff2-next', (err, dirPath) => {
     if (err) throw err;
     const data = fs.readFileSync(
       path.join(basePath, 'fontawesome-webfont.woff2')
@@ -43,7 +43,7 @@ test('Decode WOFF2 data.', (t) => {
 });
 
 test('Encode WOFF2 data.', (t) => {
-  temp.mkdir('node-woff2', (err, dirPath) => {
+  temp.mkdir('woff2-next', (err, dirPath) => {
     if (err) throw err;
     const data = fs.readFileSync(
       path.join(basePath, 'fontawesome-webfont.ttf')
