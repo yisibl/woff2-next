@@ -14,11 +14,19 @@
         "./woff2/src/woff2_enc.cc",
         "./woff2/src/woff2_info.cc",
         "./woff2/src/woff2_out.cc",
+
         "./woff2/brotli/c/common/dictionary.c",
+        "./woff2/brotli/c/common/constants.c",
+        "./woff2/brotli/c/common/context.c",
+        "./woff2/brotli/c/common/platform.c",
+        "./woff2/brotli/c/common/shared_dictionary.c",
+        "./woff2/brotli/c/common/transform.c",
+
         "./woff2/brotli/c/dec/bit_reader.c",
         "./woff2/brotli/c/dec/decode.c",
         "./woff2/brotli/c/dec/huffman.c",
         "./woff2/brotli/c/dec/state.c",
+
         "./woff2/brotli/c/enc/backward_references.c",
         "./woff2/brotli/c/enc/backward_references_hq.c",
         "./woff2/brotli/c/enc/bit_cost.c",
@@ -36,6 +44,12 @@
         "./woff2/brotli/c/enc/metablock.c",
         "./woff2/brotli/c/enc/static_dict.c",
         "./woff2/brotli/c/enc/utf8_util.c",
+
+        "./woff2/brotli/c/enc/compound_dictionary.c",
+        "./woff2/brotli/c/enc/encoder_dict.c",
+        "./woff2/brotli/c/enc/fast_log.c",
+        "./woff2/brotli/c/enc/command.c",
+
         "./src/woff2_encode.cc"
       ],
       "include_dirs": [
@@ -79,7 +93,14 @@
         "./woff2/src/woff2_enc.cc",
         "./woff2/src/woff2_info.cc",
         "./woff2/src/woff2_out.cc",
+
         "./woff2/brotli/c/common/dictionary.c",
+        "./woff2/brotli/c/common/constants.c",
+        "./woff2/brotli/c/common/context.c",
+        "./woff2/brotli/c/common/platform.c",
+        "./woff2/brotli/c/common/shared_dictionary.c",
+        "./woff2/brotli/c/common/transform.c",
+
         "./woff2/brotli/c/dec/bit_reader.c",
         "./woff2/brotli/c/dec/decode.c",
         "./woff2/brotli/c/dec/huffman.c",
@@ -101,6 +122,12 @@
         "./woff2/brotli/c/enc/metablock.c",
         "./woff2/brotli/c/enc/static_dict.c",
         "./woff2/brotli/c/enc/utf8_util.c",
+
+        "./woff2/brotli/c/enc/compound_dictionary.c",
+        "./woff2/brotli/c/enc/encoder_dict.c",
+        "./woff2/brotli/c/enc/fast_log.c",
+        "./woff2/brotli/c/enc/command.c",
+
         "./src/woff2_decode.cc"
       ],
       "include_dirs": [

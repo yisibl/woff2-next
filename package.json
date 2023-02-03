@@ -1,6 +1,6 @@
 {
-  "name": "woff2",
-  "version": "0.0.0-semantic-release",
+  "name": "woff2-next",
+  "version": "0.0.1",
   "description": "Node wrapper around Google's woff2 utility.",
   "main": "./src/woff2.js",
   "scripts": {
@@ -14,11 +14,11 @@
     "email": "ruben@maher.fyi"
   },
   "bugs": {
-    "url": "https://github.com/eqyiel/node-woff2/issues"
+    "url": "https://github.com/yisibl/woff2-next/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eqyiel/node-woff2.git"
+    "url": "git+https://github.com/yisibl/woff2-next.git"
   },
   "license": "MIT",
   "files": [

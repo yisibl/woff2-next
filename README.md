@@ -1,4 +1,4 @@
-# node-woff2
+# woff2-next
 
 This is just a Node.js wrapper around Google's excellent
 [woff2](https://github.com/google/woff2) utility.
@@ -8,7 +8,7 @@ This is just a Node.js wrapper around Google's excellent
 If you're using `npm`:
 
 ```
-npm install --save-dev woff2
+npm i woff2-next
 ```
 
 Alternatively you can clone this repo and run `npm install`. Be sure to get the
@@ -52,7 +52,7 @@ Convert WOFF2 data to TTF.
 **Example**
 
 ```js
-var woff2 = require('woff2');
+var woff2 = require('woff2-next');
 var input = fs.readFileSync('something.woff2');
 var output = 'output.ttf';
 fs.writeFileSync(output, woff2.decode(input));
@@ -74,7 +74,7 @@ Convert TTF data to WOFF2.
 **Example**
 
 ```js
-var woff2 = require('woff2');
+var woff2 = require('woff2-next');
 var input = fs.readFileSync('something.ttf');
 var output = 'output.woff2';
 fs.writeFileSync(output, woff2.encode(input));

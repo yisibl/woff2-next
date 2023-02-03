@@ -1,0 +1,54 @@
+on:
+  pull_request: null
+  push:
+    branches:
+      - master
+    tags-ignore:
+      - '**'
+    paths-ignore:
+      - '**/*.md'
+      - LICENSE
+      - '**/*.gitignore'
+      - .editorconfig
+      - docs/**
+jobs: 
+  Linux:
+    name: Test on Linux
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [14, 16, 18]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          # 等同于 run: git submodule update --init --recursive
+          submodules: recursive
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          check-latest: true
+          cache: yarn
+      - name: Install dependencies
+        run: yarn install
+      - name: Test bindings
+        run: yarn test
+
+  macOS:
+    name: Test on macOS
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        node: [14, 16, 18]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          check-latest: true
+          cache: yarn
+      - name: Install dependencies
+        run: yarn install
+      - name: Test bindings
+        run: yarn test
