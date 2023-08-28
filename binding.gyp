@@ -56,21 +56,21 @@
         "./woff2/brotli/c/include",
         "./woff2/include"
       ],
-      "cflags": ["-std=c++14 -w"],
+      "cflags": ["-std=c++17 -w"],
       "conditions": [
         [
           "OS!=\"win\"",
           {
-            "cflags+": ["-std=c++14"],
-            "cflags_c+": ["-std=c++14"],
-            "cflags_cc+": ["-std=c++14"]
+            "cflags+": ["-std=c++17"],
+            "cflags_c+": ["-std=c++17"],
+            "cflags_cc+": ["-std=c++17"]
           }
         ],
         [
           "OS==\"mac\"",
           {
             "xcode_settings": {
-              "OTHER_CPLUSPLUSFLAGS": ["-std=c++14", "-stdlib=libc++", "-w"],
+              "OTHER_CPLUSPLUSFLAGS": ["-std=c++17", "-stdlib=libc++", "-w"],
               "OTHER_LDFLAGS": ["-stdlib=libc++"],
               "MACOSX_DEPLOYMENT_TARGET": "10.7"
             }
@@ -133,21 +133,21 @@
         "./woff2/brotli/c/include",
         "./woff2/include"
       ],
-      "cflags": ["-std=c++14 -w"],
+      "cflags": ["-std=c++17 -w"],
       "conditions": [
         [
           "OS!=\"win\"",
           {
-            "cflags+": ["-std=c++14"],
-            "cflags_c+": ["-std=c++14"],
-            "cflags_cc+": ["-std=c++14"]
+            "cflags+": ["-std=c++17"],
+            "cflags_c+": ["-std=c++17"],
+            "cflags_cc+": ["-std=c++17"]
           }
         ],
         [
           "OS==\"mac\"",
           {
             "xcode_settings": {
-              "OTHER_CPLUSPLUSFLAGS": ["-std=c++14", "-stdlib=libc++", "-w"],
+              "OTHER_CPLUSPLUSFLAGS": ["-std=c++17", "-stdlib=libc++", "-w"],
               "OTHER_LDFLAGS": ["-stdlib=libc++"],
               "MACOSX_DEPLOYMENT_TARGET": "10.7"
             }
