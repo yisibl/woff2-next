@@ -4,6 +4,7 @@
   "description": "Node wrapper around Google's woff2 utility.",
   "main": "./src/woff2.js",
   "scripts": {
+    "build": "((node-gyp configure && node-gyp build) > builderror.log) || (exit 0)",
     "lint": "npm run run-eslint && npm run run-prettier",
     "run-eslint": "eslint **/*.js",
     "run-prettier": "prettier --write **/*.{js,json,md,gyp,yml}",
@@ -30,7 +31,7 @@
   ],
   "dependencies": {
     "bindings": "^1.5.0",
-    "nan": "^2.15.0"
+    "nan": "^2.17.0"
   },
   "devDependencies": {
     "eslint": "8.13.0",

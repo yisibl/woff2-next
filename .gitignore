@@ -1,4 +1,7 @@
 node_modules/
 build/
 .nyc_output/
+
 .DS_Store
+
+builderror.log
